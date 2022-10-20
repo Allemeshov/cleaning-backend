@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.9" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.4.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\chores.BLL\chores.BLL.csproj" />
+      <ProjectReference Include="..\chores.Web.Models\chores.Web.Models.csproj" />
+    </ItemGroup>
+
+</Project>

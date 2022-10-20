@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chores.Web", "chores.Web\chores.Web.csproj", "{9DFDB98A-C048-450C-941C-AF7E32476D1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chores.Web.Models", "chores.Web.Models\chores.Web.Models.csproj", "{4F607EBF-0694-445C-82A6-44932D52F075}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chores.BLL", "chores.BLL\chores.BLL.csproj", "{8CA723A0-F2E9-4901-89E3-A16B15EC8F14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chores.Infrastructure", "chores.Infrastructure\chores.Infrastructure.csproj", "{ED948339-5473-40A9-8939-2C0CA4BB46CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildConfig", "BuildConfig", "{05871482-E5A4-40BB-BE38-9FD0546015FD}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chores.DAL", "chores.DAL\chores.DAL.csproj", "{3400CD2B-61E0-4903-944C-E1F49FE4210E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRtc.Call.Web", "WebRtc.Call.Web\WebRtc.Call.Web.csproj", "{545AC6DA-EDB6-4302-B381-DACA928FA650}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebRtc.Call", "WebRtc.Call", "{677B7A70-AFE7-4E29-B4FE-64D3B155BD64}"
+	ProjectSection(SolutionItems) = preProject
+		WebRtc.Call.Web\.dockerignore = WebRtc.Call.Web\.dockerignore
+		WebRtc.Call.Web\Dockerfile = WebRtc.Call.Web\Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "outer-nginx", "outer-nginx", "{69D2E74E-E607-474D-B9AF-949CA08505DA}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\birdegop-ru\nginx-docker\certificate\birdegop.crt = ..\..\birdegop-ru\nginx-docker\certificate\birdegop.crt
+		..\..\birdegop-ru\nginx-docker\certificate\birdegop.key = ..\..\birdegop-ru\nginx-docker\certificate\birdegop.key
+		..\..\birdegop-ru\nginx-docker\docker-compose.yml = ..\..\birdegop-ru\nginx-docker\docker-compose.yml
+		..\..\birdegop-ru\nginx-docker\Dockerfile = ..\..\birdegop-ru\nginx-docker\Dockerfile
+		..\..\birdegop-ru\nginx-docker\nginx.conf = ..\..\birdegop-ru\nginx-docker\nginx.conf
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DFDB98A-C048-450C-941C-AF7E32476D1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DFDB98A-C048-450C-941C-AF7E32476D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DFDB98A-C048-450C-941C-AF7E32476D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DFDB98A-C048-450C-941C-AF7E32476D1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F607EBF-0694-445C-82A6-44932D52F075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F607EBF-0694-445C-82A6-44932D52F075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F607EBF-0694-445C-82A6-44932D52F075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F607EBF-0694-445C-82A6-44932D52F075}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CA723A0-F2E9-4901-89E3-A16B15EC8F14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA723A0-F2E9-4901-89E3-A16B15EC8F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA723A0-F2E9-4901-89E3-A16B15EC8F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA723A0-F2E9-4901-89E3-A16B15EC8F14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED948339-5473-40A9-8939-2C0CA4BB46CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED948339-5473-40A9-8939-2C0CA4BB46CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED948339-5473-40A9-8939-2C0CA4BB46CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED948339-5473-40A9-8939-2C0CA4BB46CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3400CD2B-61E0-4903-944C-E1F49FE4210E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3400CD2B-61E0-4903-944C-E1F49FE4210E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3400CD2B-61E0-4903-944C-E1F49FE4210E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3400CD2B-61E0-4903-944C-E1F49FE4210E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{545AC6DA-EDB6-4302-B381-DACA928FA650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{545AC6DA-EDB6-4302-B381-DACA928FA650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{545AC6DA-EDB6-4302-B381-DACA928FA650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{545AC6DA-EDB6-4302-B381-DACA928FA650}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{677B7A70-AFE7-4E29-B4FE-64D3B155BD64} = {05871482-E5A4-40BB-BE38-9FD0546015FD}
+		{69D2E74E-E607-474D-B9AF-949CA08505DA} = {05871482-E5A4-40BB-BE38-9FD0546015FD}
+	EndGlobalSection
+EndGlobal
